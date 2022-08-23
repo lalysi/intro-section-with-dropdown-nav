@@ -1,0 +1,271 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+nav {
+  min-height: 80px;
+  padding: 5px 20px 20px 20px;
+}
+
+#logo {
+  margin: 20px;
+}
+
+#myLinks {
+  display: none;
+}
+
+.nav-main,
+.nav-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+  font-size: 0.9rem;
+}
+
+.nav-button {
+  background-color: white;
+  color: rgb(150, 150, 150);
+  border: 1.5px solid rgb(150, 150, 150);
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+}
+
+span {
+  color: rgb(150, 150, 150);
+  font-size: 0.9rem;
+}
+
+#hero-img {
+  width: 100%;
+  display: block;
+}
+
+#mobile-img {
+  display: none;
+}
+
+main {
+  display: flex;
+}
+
+.main-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 5%;
+  flex-basis: 1;
+}
+
+.main-words {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 8%;
+}
+
+h1 {
+  font-size: 3.8rem;
+  margin: 0;
+}
+
+.main-intro {
+  font-size: 0.8rem;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  color: rgb(108, 108, 108);
+}
+
+.main-button {
+  background-color: black;
+  border: 1.5px solid black;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 1.5px solid black;
+}
+
+a:hover,
+span:hover {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 115px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding-right: 20px;
+  margin-top: 12px;
+}
+
+.up-arrow {
+  display: none;
+}
+
+.down-arrow {
+  display: inline-block;
+}
+
+.dropdown:hover .up-arrow {
+  display: inline-block;
+}
+
+.dropdown:hover .down-arrow {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.small-logos {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logos {
+  width: 60px;
+}
+
+.icon-link {
+  padding: 0 8px 0 0;
+}
+/* .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); } */
+
+/* Media Query: tablet and smaller */
+
+@media screen and (max-width: 1000px) {
+  #hero-img {
+    display: none;
+  }
+
+  #mobile-img {
+    display: block;
+    width: 100%;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .main-words {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+
+  .nav-main {
+    display: none;
+  }
+
+  .nav-mobile-menu {
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .nav-mobile-top {
+    line-height: 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-mobile-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-mobile-x {
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    color: gray;
+  }
+
+  .nav-button {
+    margin-top: 10px;
+    width: 150px;
+  }
+}

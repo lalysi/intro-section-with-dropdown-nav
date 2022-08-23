@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  
+  <!-- Main Navigation -->
+  <nav class="nav-main">
+    <div class="nav-left">
+      <img src="images/logo.svg" alt="snap logo" id="logo">
+      
+      <div class="dropdown">
+        <span>Features <i class="fa-solid fa-angle-down down-arrow"></i><i class="fa-solid fa-angle-up up-arrow"></i></span>
+        <div class="dropdown-content">
+          <ul>
+            <li><a href="#"><img class="icon-link" src="images/icon-todo.svg"> To Do </a></li>
+            <li><a href="#"><img class="icon-link" src="images/icon-calendar.svg">Calendars</a></li>
+            <li><a href="#"><img class="icon-link" src="images/icon-reminders.svg">Reminders</a></li>
+            <li><a href="#"><img class="icon-link" src="images/icon-planning.svg">Planning</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <span>Company <i class="fa-solid fa-angle-down down-arrow"></i><i class="fa-solid fa-angle-up up-arrow"></i></span>
+        <div class="dropdown-content">
+          <ul>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="#">Careers</a>
+      <a href="">About</a>  
+    </div>
+    <div class="nav-right">
+        <a href="#">Login</a>
+        <a href="#"><button class="nav-button">Register</button></a>
+    </div>
+  </nav>
+  <!-- Mobile Navigation -->
+  <nav class="nav-mobile">
+    <div class="nav-left">
+      <img src="images/logo.svg" alt="snap logo" id="logo">
+    </div>
+    <div class="nav-right">
+      <img id="menuLogo" src="images/icon-menu.svg" alt="menu icon" class="icon" onclick="myFunction()">
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks" class="nav-mobile-menu">
+          <div class="nav-mobile-x"><img src="images/icon-close-menu.svg" id="nav-mobile-x" alt="" onclick="myFunction()"></div>
+          <div class="nav-mobile-top">
+            <a href="#">Features <i class="fa-solid fa-angle-down down-arrow"></i></a>
+            <a href="#">Company <i class="fa-solid fa-angle-down down-arrow"></i></a>
+            <a href="#">Careers</a>
+            <a href="#">About</a>
+          </div>
+          <div class="nav-mobile-bottom">
+            <a href="#">Login</a>
+            <a href="#"><button class="nav-button">Register</button></a>
+          </div>
+        </div>
+    </div>
+  </nav>
+  <main>
+    <div class="main-words">
+      <h1>Make remote work</h1>
+      <p class="main-intro">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <button class="main-button">Learn more</button>
+      <div class = "small-logos">
+        <img class="logos" src="images/client-databiz.svg" alt="databiz logo">
+        <img class="logos" src="images/client-audiophile.svg" alt="logo">
+        <img class="logos" src="images/client-meet.svg" alt="logo">
+        <img class="logos" src="images/client-maker.svg" alt="logo">
+      </div>
+    </div>
+    <div class="main-image">
+      <img src="images/image-hero-desktop.png" alt="man working" id="hero-img">
+      <img src="images/image-hero-mobile.png" alt="man working" id="mobile-img">
+    </div>
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="script.js"></script>
+</body>
+</html>
